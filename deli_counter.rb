@@ -1,9 +1,9 @@
 katz_deli = []
-def line(array)
-  if array.length >= 1
+def line(katz_deli)
+  if katz_deli.length >= 1
     nuarray = []
     counter = 1 
-    array.each do |name|
+    katz_deli.each do |name|
       nuarray.push("#{counter}. #{name}")
       counter += 1 
     end 
