@@ -1,17 +1,17 @@
 katz_deli = []
-def line (katz_deli)
 
-  if katz_deli.length == 0
+def line(katz_deli)
+  if katz_deli.length >= 1
+    nuarray = []
+    counter = 1 
+    katz_deli.each do |name|
+      nuarray.push("#{counter}. #{name}")
+      counter += 1 
+    end 
+    puts "The line is currently: #{nuarray.join(" ")}"
+  else
     puts "The line is currently empty."
-    
-  else katz_deli.length >= 1
-    puts "The line is currently: #{other_deli}."
-    
-    katz_deli.each_with_index do |value, index|
-      message = "The line is currently: #{index.to_i+1}. #{value} "
-      puts message
-end
-end
+  end
 end
 
 def take_a_number(katz_deli, name)
